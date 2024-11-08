@@ -362,8 +362,8 @@ function zpwrExpandSupernaturalSpace() {
                 # no expansion occurred
                 if [[ $ZPWR_VARS[AP_SPACE] == true ]]; then
                     zle autopair-insert
-                else
-                    zle self-insert
+                # else
+                #     zle self-insert
                 fi
             else
                 # expansion occurred
@@ -371,8 +371,8 @@ function zpwrExpandSupernaturalSpace() {
                     # stop duplicate space
                     if [[ $ZPWR_VARS[AP_SPACE] == true ]]; then
                         zle autopair-insert
-                    else
-                        zle self-insert
+                    # else
+                    #     zle self-insert
                     fi
                 fi
             fi

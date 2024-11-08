@@ -377,11 +377,13 @@ zle -N zpwrExpandSupernaturalSpace
 zle -N zpwrExpandTerminateSpace
 
 if [[ $ZPWR_EXPAND != false ]]; then
-    bindkey -M viins " " zpwrExpandSupernaturalSpace
-    bindkey -M viins "^@" zpwrExpandTerminateSpace
+    bindkey -M viins "^ " zpwrExpandSupernaturalSpace
+    # bindkey -M viins "^@" zpwrExpandTerminateSpace
+    # bindkey -M viins " " zpwrExpandTerminateSpace
 
-    bindkey -M emacs " " zpwrExpandSupernaturalSpace
-    bindkey -M emacs "^@" zpwrExpandTerminateSpace
+    bindkey -M emacs "^ " zpwrExpandSupernaturalSpace
+    # bindkey -M emacs "^@" zpwrExpandTerminateSpace
+    # bindkey -M emacs " " zpwrExpandTerminateSpace
 fi
 
 if [[ $ZPWR_EXPAND_TO_HISTORY == true ]]; then
